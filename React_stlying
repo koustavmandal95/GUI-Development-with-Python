@@ -1,0 +1,28 @@
+import React from "react";
+import ReactDOM from "react-dom";
+const img = "https://picsum.photos/200";
+ReactDOM.render(
+  <div>
+    <h1 className="heading">My Favourite Foods</h1>
+    <div>
+    <img src = {img+"?blur"}
+    alt="random"/>
+      <img
+        className="food_img"
+        src="https://sanfrancisco.cbslocal.com/wp-content/uploads/sites/15116056/2018/09/pho-saigon-photo-by-maxx-w-yelp.jpg?w=640&h=360&crop=1"
+      alt = "noodles"
+      />
+      <img
+        className="food_img"
+        src="https://glebekitchen.com/wp-content/uploads/2019/07/seekhkebabtopplatterbig.jpg"
+      alt="kebab"
+      />
+      <img
+        className="food_img"
+        src="https://i0.wp.com/rakskitchen.net/wp-content/uploads/2015/02/pani-puri-fb-1.jpg?fit=2000%2C1600&ssl=1"
+        alt ="pani-puri"
+     />
+    </div>
+  </div>,
+  document.getElementById("root")
+);
